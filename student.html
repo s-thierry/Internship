@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<header class="topbar">
+    <div id="l3">
+        <a href=""><p id="ck" class="fade-text">COLLEGE KARAMBI</p></a>
+      <ul>
+            <li><a href="index.html"><img src="assets/home.png" id="ig2">Home</a></li>
+            <li><a href="about.html"><img src="assets/about.png" id="ig2">About us</a></li>
+            <li><a href="academcs.html"><img src="assets/graduation.png" style="width: 10px; height: 14px;">Academics</a></li>
+            <li><a href="services.html"><img src="assets/service.png" id="ig2">Services</a></li>
+            <li><a href="admissions.html"><img src="assets/admission.png"  style="width: 10px; height: 14px;">Admission</a></li>
+            <li><a href="gallery.html"><img src="assets/gallery.png" id="ig2">Gallery</a></li>
+            <li><a href="contact.html"><img src="assets/phone.png" id="ig2">Contact</a></li>
+        </ul>
+    </div>
+</header>
+<div class="guide1">
+    <h2>🧾APPLICATION GUIDE</h2><br>
+<b>Please fill out the form below to register a new student. Follow these steps:</b><br>
+
+<b>1. Student Name</b><br>
+Enter the student’s First Name and Last Name correctly.<br><br>
+
+<b>2. Gender</b><br>
+Select the student’s gender from the dropdown menu.<br><br>
+
+<b>3. Date of Birth</b><br>
+Enter the student’s birth date in the format: dd/mm/yyyy.<br><br>
+
+<b>4. Class</b><br>
+Write the class or grade the student will be enrolled in (e.g., Grade 5, Senior 2).<br><br>
+
+<b>5. Parent/Guardian Information</b><br>
+Provide the full name of the parent or guardian responsible for the student.<br><br>
+
+<b>6. Contact Number</b><br>
+Enter a valid phone number so the school can communicate easily.<br><br>
+
+<b>7. Address</b><br>
+Fill in the student’s home address clearly (e.g., city, district, street).<br><br>
+
+<b>8. Review and Submit</b><br>
+Check all details carefully, then click the Register / Submit button.<br><br>
+</div>
+<div id="guide2">
+     <b><p style="color: red;">⚠️Important Notes</p></b><br>
+1. Make sure all information is accurate.<br>
+2. Use a phone number that is always reachable.<br>
+3. Double-check spelling of names before submitting.<br>
+</div>
+    <div id="student-form">
+        <h2>New Student Registration</h2>
+        <form onsubmit="return form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required id="a" placeholder="Enter your first name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required id="b" placeholder="Enter your Last name">
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="class">Class</label>
+            <input type="text" id="class" name="class" required placeholder="Enter your calss">
+
+            <label for="parent">Parent/Guardian Name</label>
+            <input type="text" id="parent" name="parent" required placeholder="Enter your Parent/Guardian name">
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" required placeholder="Enter your Phone number">
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" required placeholder="...."></textarea>
+
+            <input type="submit" value="Register Student" id="button">
+            <a href="Services.html"><input type="button" value="Back" id="button"></a>
+        </form>
+    </div>
+    <footer>
+        <div id="so">
+<b class="fo">Copyright&copy; | COLLEGE KARAMBI 
+•
+All Rights Reserved
+•
+Welcome!</b>
+        </div>
+    </footer>
+</body>
+</html>

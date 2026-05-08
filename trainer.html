@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer registration</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<header class="topbar">
+    <div id="l3">
+        <a href=""><p id="ck" class="fade-text">COLLEGE KARAMBI</p></a>
+        <ul>
+            <li><a href="index.html"><img src="assets/home.png" id="ig2">Home</a></li>
+            <li><a href="about.html"><img src="assets/about.png" id="ig2">About us</a></li>
+            <li><a href="academcs.html"><img src="assets/graduation.png" style="width: 10px; height: 14px;">Academics</a></li>
+            <li><a href="services.html"><img src="assets/service.png" id="ig2">Services</a></li>
+            <li><a href="admissions.html"><img src="assets/admission.png"  style="width: 10px; height: 14px;">Admission</a></li>
+            <li><a href="gallery.html"><img src="assets/gallery.png" id="ig2">Gallery</a></li>
+            <li><a href="contact.html"><img src="assets/phone.png" id="ig2">Contact</a></li>
+        </ul>
+    </div>
+</header>
+<div class="guide1">
+    <h2>🧾APPLICATION GUIDE</h2><br>
+    <b>Welcome! Please complete the form below to apply as a trainer. Follow these simple steps:</b></b><br><br>
+
+<b>1. Enter Your Personal Details</b><br>
+Fill in your First Name and Last Name exactly as they appear on your official documents.<br><br>
+
+<b>2. Select Your Gender</b><br>
+Choose the appropriate option from the dropdown menu.<br><br>
+
+<b>3. Provide Contact Information<br></b>
+
+Enter a valid Email Address (this will be used for communication).
+Provide your Phone Number so we can reach you if needed.<br><br>
+
+<b>4. Add Your Professional Details</b><br>
+
+Specify your Subject/Specialization (e.g., Mathematics, Web Development).
+Enter your Qualification (e.g., Degree, Certification).
+Indicate your Years of Experience in the field.<br><br>
+
+<b>5. Create Your Account</b><br>
+
+Choose a unique Username.
+Create a strong Password (use letters, numbers, and symbols).
+Confirm your password by entering it again.<br><br>
+
+<b>6. Review and Submit</b><br>
+Double-check all your information to ensure accuracy, then click the Submit / Register button.
+</div>
+<div id="guide2">
+    <b><p style="color: red;">⚠️Important Notes</p></b><br>
+1. Make sure all information is accurate.<br>
+2. Use a phone number that is always reachable.<br>
+3. Double-check spelling of names before submitting.<br>
+</div>
+    <div id="trainer-form">
+        <h2>Trainer Registration</h2>
+        <form onsubmit="return form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required placeholder="Enter your First name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required placeholder="Enter yourLast name">
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your Email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your Phone number">
+
+            <label for="subject">Subject/Specialization</label>
+            <input type="text" id="subject" name="subject" required placeholder="Enter your Subject/Specialization">
+
+            <label for="qualification">Qualification</label>
+            <input type="text" id="qualification" name="qualification" required placeholder="Enter your Qualification">
+
+            <label for="experience">Years of Experience</label>
+            <input type="number" id="experience" name="experience" min="0" required placeholder="Enter years of Experience">
+
+            <label for="username">Account Username</label>
+            <input type="text" id="username" name="username" required id="a" placeholder="Enter your User name">
+
+            <label for="password">Create Account Password</label>
+            <input type="password" id="password" name="password" required id="c" placeholder="Enter your Password">
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required id="c" placeholder="Confirm your Password">
+
+             <input type="submit" value="Register Trainer" id="button">
+            <a href="Services.html"><input type="button" value="Back" id="button"></a>
+    </div>
+    <footer>
+        <div id="so">
+<b class="fo">Copyright&copy; | COLLEGE KARAMBI 
+•
+All Rights Reserved
+•
+Welcome!</b>
+        </div>
+    </footer>
+</body>
+</html>
