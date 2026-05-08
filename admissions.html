@@ -30,11 +30,11 @@
 </div>
 <div class="form-container">
 <h1 class="title">Admission Form</h1>
-<form>
+<form onsubmit="return admission()">
 
-<input type="text" placeholder="First Name">
+<input type="text" placeholder="First Name" id="Fname">
 
-<input type="text" placeholder="Last Name">
+<input type="text" placeholder="Last Name" id="Lastname">
 
 <select>
 <option>Gender</option>
@@ -55,7 +55,7 @@
 <textarea class="full" placeholder="Address"></textarea>
 
 <div class="full">
-<button>Submit Application</button>
+<input type="submit" id="button" value="Submit Application">
 </div>
 
 </form>
