@@ -542,9 +542,6 @@ textarea{
 button:hover{
     background:#06245c;
 }
-
-/* CARDS */
-
 .cards{
     width:90%;
     margin:auto;
@@ -552,4 +549,10 @@ button:hover{
     gap:20px;
     flex-wrap:wrap;
     justify-content:center;
+}
+.img111{
+    transition: 0.5s;
+}
+.img111:hover{
+    transform: scale(1.1);
 }
