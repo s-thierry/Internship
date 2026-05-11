@@ -30,34 +30,33 @@
 </div>
 <div class="form-container">
 <h1 class="title">Admission Form</h1>
-<form onsubmit="return admission()">
+<form onsubmit= "return(imyirondoro());" action="index.html">
 
-<input type="text" placeholder="First Name" id="Fname">
+<input type="text" placeholder="First Name" id="IZINA">
+<input type="text" placeholder="Last Name" id="IRINDI">
 
-<input type="text" placeholder="Last Name" id="Lastname">
 
-<select>
+<select id="sex">
 <option>Gender</option>
 <option>Male</option>
 <option>Female</option>
 </select>
 
-<input type="date">
+<input type="date" id="igihe">
 
 <input type="text" placeholder="Class Applying For">
 
 <input type="text" placeholder="Parent Name">
 
-<input type="number" placeholder="Phone Number">
+<input type="number" placeholder="Phone Number" id="phone">
 
 <input type="email" placeholder="Email">
 
 <textarea class="full" placeholder="Address"></textarea>
-
+<p id="error"></p>
 <div class="full">
 <input type="submit" id="button" value="Submit Application">
 </div>
-
 </form>
 
 </div>
@@ -70,5 +69,36 @@ All Rights Reserved
 Welcome!</b>
         </div>
     </footer>
+    <script>
+        function imyirondoro(){
+            var izina = document.getElementById("IZINA").value;
+            var izina = document.getElementById("IRINDI").value;
+            var nomero = document.getElementById("phone").value;
+            var igitsina = document.getElementById("sex").value;
+            var message = document.getElementById("error");
+            var italiki = document.getElementById("igihe").value;
+
+            if(izina=="" || nomero=="" || igitsina==""){
+                document.getElementById("igihe").style.border = "solid , red";
+                document.getElementById("IZINA").style.border = "solid , red";
+                document.getElementById("IZINA").style.textAlign = "center";
+                document.getElementById("IRINDI").style.border = "solid , red";
+                document.getElementById("phone").style.border = "solid , red";
+                document.getElementById("sex").style.border = "solid,red ";
+document.getElementById("error").style.color = "red";
+document.getElementById("error").innerHTML = "please enter in empty fields!!";
+return false;
+            }
+            else if(nomero.length>12 || nomero.length<10){
+                document.getElementById("phone").style.border = "solid , red";
+                document.getElementById("error").style.color = "red";
+document.getElementById("error").innerHTML = "please entervalid number🫵";
+return false;
+
+
+            }
+        }
+    
+    </script>
 </body>
 </html>
